@@ -1,0 +1,75 @@
+[
+    {
+        "coll": "twenty_minutes",
+        "display": "20 Minuten",
+        "baseLink": "http://www.20min.ch",
+        "crawler": "twenty_minute_crawler.crawl",
+        "indexer": "twenty_minute_indexer.index",
+        "sections": [
+            "/community/leser_reporter/",
+            "/people/schweiz/",
+            "schweiz/basel/",
+            "/community/",
+            "/ausland/",
+            "/community/viral/",
+            "/schweiz/zentralschweiz/",
+            "/schweiz/bern/",
+            "/people/",
+            "/schweiz/ostschweiz/",
+            "/finance/",
+            "/schweiz/",
+            "/schweiz/zuerich/",
+            "/panorama/",
+            "/digital/news/"
+        ]
+    },
+    {
+        "coll": "blick",
+        "display": "Blick",
+        "baseLink": "http://www.blick.ch",
+        "crawler": "blick_crawler.crawl",
+        "indexer": "blick_indexer.index",
+        "sections": [
+            "/news/schweiz/",
+            "/news/schweiz/page2",
+            "/news/schweiz/page3",
+            "/news/schweiz/page4",
+            "/news/ausland/",
+            "/news/ausland/page2",
+            "/news/ausland/page3",
+            "/news/ausland/page4",
+            "/news/politik/",
+            "/news/politik/page2",
+            "/news/politik/page3",
+            "/news/politik/page4",
+            "/news/wirtschaft/",
+            "/news/wirtschaft/page2",
+            "/news/wirtschaft/page3",
+            "/news/wirtschaft/page4"
+        ]
+    },
+    {
+        "coll": "watson",
+        "display": "Watson",
+        "baseLink": "http://www.watson.ch",
+        "crawler": "watson_crawler.crawl",
+        "indexer": "watson_indexer.index",
+        "sections": [
+            "/Schweiz/",
+            "/regionen/",
+            "International/",
+            "/deutschland/",
+            "/usa/",
+            "/eu/",
+            "/china/",
+            "/Wirtschaft/",
+            "/Leben/",
+            "/Wissen/",
+            "/gesundheit/",
+            "/news/wirtschaft/",
+            "/news/wirtschaft/page2",
+            "/news/wirtschaft/page3",
+            "/news/wirtschaft/page4"
+        ]
+    }
+]

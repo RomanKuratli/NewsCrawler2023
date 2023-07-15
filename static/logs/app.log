@@ -1,0 +1,37 @@
+2023-07-15 12:27:55,041 INFO __main__ Successfully configured logger
+2023-07-15 12:27:55,052 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-15 12:27:55,052 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-07-15 12:28:02,098 ERROR controller Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\rkura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rkura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rkura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rkura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\NewsCrawler\controller.py", line 47, in index
+    return render_start_page()
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\NewsCrawler\controller.py", line 86, in render_start_page
+    journals=sorted(JOURNALS.items(), key=sort_journals_by_display_key))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\NewsCrawler\controller.py", line 38, in sort_journals_by_display_key
+    return journal[1]["Display"]
+           ~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Display'
+2023-07-15 12:28:02,099 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 12:28:02] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2023-07-15 12:28:37,875 INFO __main__ Successfully configured logger
+2023-07-15 12:28:37,887 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-15 12:28:37,887 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-07-15 12:28:43,178 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 12:28:43] "GET / HTTP/1.1" 200 -
+2023-07-15 12:28:43,345 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 12:28:43] "GET /static/w3.css HTTP/1.1" 200 -
+2023-07-15 12:28:43,400 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 12:28:43] "GET /static/style.css HTTP/1.1" 200 -
+2023-07-15 12:28:43,561 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 12:28:43] "GET /static/jquery.js HTTP/1.1" 200 -
