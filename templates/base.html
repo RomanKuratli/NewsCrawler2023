@@ -13,14 +13,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
     <meta charset="UTF-8">
-    <title>20 min Parser</title>
+    <title>News Crawler 2023</title>
     {% block additional_header %}{% endblock %}
 </head>
 <body>
     <div class="w3-main">
         <div class="w3-card-4 w3-title-bg w3-padding">
-            <h1 class="w3-title-font">Romans 20-min-Parser</h1>
-            <a href="{{ url_for("index") }}"><i class="fa fa-home w3-xxlarge w3-title-font"></i></a>
+            <div class="w3-row">
+                <div class="w3-threequarter">
+                    <h1 class="w3-title-font">News Crawler 2023</h1>
+                </div>
+                <div class="w3-quarter">
+                    <a href="{{ url_for("index") }}"><i class="fa fa-home w3-xxlarge w3-title-font"></i></a>
+                </div>
+            </div>
         </div>
         <div id="logDiv">
             {% with messages = get_flashed_messages(with_categories=true) %}

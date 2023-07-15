@@ -35,3 +35,27 @@ KeyError: 'Display'
 2023-07-15 12:28:43,345 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 12:28:43] "GET /static/w3.css HTTP/1.1" 200 -
 2023-07-15 12:28:43,400 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 12:28:43] "GET /static/style.css HTTP/1.1" 200 -
 2023-07-15 12:28:43,561 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 12:28:43] "GET /static/jquery.js HTTP/1.1" 200 -
+2023-07-15 13:38:55,794 INFO __main__ Successfully configured logger
+2023-07-15 13:38:55,805 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-15 13:38:55,805 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-07-15 13:39:08,797 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 13:39:08] "GET /static/w3.css HTTP/1.1" 200 -
+2023-07-15 13:39:08,831 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 13:39:08] "GET /static/style.css HTTP/1.1" 200 -
+2023-07-15 13:39:08,918 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 13:39:08] "GET /static/jquery.js HTTP/1.1" 200 -
+2023-07-15 13:39:08,979 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 13:39:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-07-15 13:39:13,260 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 13:39:13] "GET / HTTP/1.1" 200 -
+2023-07-15 13:39:13,272 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 13:39:13] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-15 13:39:13,495 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 13:39:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-15 13:39:13,588 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 13:39:13] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-15 14:13:53,432 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 14:13:53] "GET / HTTP/1.1" 200 -
+2023-07-15 14:13:53,446 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 14:13:53] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-15 14:13:53,693 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 14:13:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-15 14:13:53,756 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 14:13:53] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-15 14:16:18,262 INFO __main__ Successfully configured logger
+2023-07-15 14:16:18,273 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-15 14:16:18,273 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-07-15 14:16:22,079 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 14:16:22] "GET / HTTP/1.1" 200 -
+2023-07-15 14:16:22,238 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 14:16:22] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-15 14:16:22,331 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 14:16:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-15 14:16:22,409 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 14:16:22] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -

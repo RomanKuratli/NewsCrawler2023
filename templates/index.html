@@ -18,17 +18,21 @@ function getStatInfo(collName) {
 {% endblock %}
 {% block content %}
 <div class="w3-card-4 w3-card-bg w3-padding w3-margin-top w3-margin-bottom">
-    <h2>Issue term analysis</h2>
-    <form action="{{ url_for("term_analysis")}}" method="get">
-        <p>
-            Term: <br/>
-            <input type="text" name="term"/>
-        </p>
-        <input type="submit" value="analyze term"/>
-    </form>
+    <div class="w3-row">
+        <div class="w3-quarter">
+            <h2>Issue term analysis</h2>
+        </div> 
+        <div class="w3-threequarter">
+            <form action="{{ url_for("term_analysis")}}" method="get">
+                <p>
+                    Term:&nbsp;<input type="text" name="term"/>&nbsp;<input type="submit" value="analyze term"/>
+                </p>
+            </form>
+        </div>
+    </div>
 </div>
 <div class="w3-card-4 w3-card-bg w3-padding w3-margin-top w3-margin-bottom">
-    <h2>saved stories</h2>
+    <h2>Saved Stories</h2>
     <div class="w3-responsive">
         <table class="w3-table-all w3-centered">
             <thead>
@@ -45,7 +49,7 @@ function getStatInfo(collName) {
             <tbody>
                 {% for coll_name, journal in journals %}
                 <tr>
-                    <td><a href="{{ url_for("show_journal", coll_name=coll_name) }}">{{ journal["Display"] }}</a></td>
+                    <td><a href="{{ url_for("show_journal", coll_name=coll_name) }}">{{ journal["display"] }}</a></td>
                     <td>{{ journal["article_count"] }}</td>
                     <td>
                         <a class="w3-btn w3-round-xlarge w3-theme"
@@ -82,14 +86,14 @@ function getStatInfo(collName) {
                 <tr>
                     <td colspan="7">
                         <div id="taskInfo_{{ coll_name }}">
-                            <p>Current state: <span id="state_{{ coll_name }}"></span><br/>
-                            Recent action: <span id="recentAction_{{ coll_name }}"></span><br/>
-                            Fetched stories: <span id="fetched_{{ coll_name }}"></span>/<span id="total_{{ collname }}"></span> <br/>
-                            Progress: <progress id="progressBar_{{ coll_name }}" value="0" max="100"></progress> <span id="progress_{{ coll_name }}"></span>%</p>
-                            <p><button id="refresh_{{ coll_name }}"
+                            Current state: <span id="state_{{ coll_name }}"></span>&nbsp;
+                            Recent action: <span id="recentAction_{{ coll_name }}"></span>&nbsp;
+                            Fetched stories: <span id="fetched_{{ coll_name }}"></span>/<span id="total_{{ collname }}"></span>&nbsp;
+                            Progress: <progress id="progressBar_{{ coll_name }}" value="0" max="100"></progress> <span id="progress_{{ coll_name }}"></span>%&nbsp;
+                            <button id="refresh_{{ coll_name }}"
                                        class="w3-btn w3-round-xlarge w3-theme"
                                        onclick="getStatInfo('{{ coll_name }}')"
-                            >Refresh</button></p>
+                            >Refresh</button>
                         </div>
                     </td>
                 </tr>

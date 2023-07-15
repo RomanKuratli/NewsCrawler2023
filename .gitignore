@@ -9,3 +9,4 @@ __pycache__/
 !/db/mongo_console.command
 !/db/start_mongodb.command
 !/db/stop_mongodb.command
+static/logs/app.log
