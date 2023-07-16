@@ -2,25 +2,23 @@
     {
         "coll": "twenty_minutes",
         "display": "20 Minuten",
-        "baseLink": "http://www.20min.ch",
+        "baseLink": "https://www.20min.ch",
         "crawler": "twenty_minute_crawler.crawl",
         "indexer": "twenty_minute_indexer.index",
         "sections": [
-            "/community/leser_reporter/",
-            "/people/schweiz/",
-            "schweiz/basel/",
+            "/schweiz/",
             "/community/",
             "/ausland/",
-            "/community/viral/",
-            "/schweiz/zentralschweiz/",
-            "/schweiz/bern/",
+            "/zentralschweiz/",
+            "/bern/",
             "/people/",
-            "/schweiz/ostschweiz/",
+            "/ostschweiz/",
             "/finance/",
             "/schweiz/",
-            "/schweiz/zuerich/",
+            "/zuerich/",
             "/panorama/",
-            "/digital/news/"
+            "/digital/",
+            "/ukraine/"
         ]
     },
     {

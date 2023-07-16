@@ -23,10 +23,6 @@ def story_link_filter(href):
 
 def crawl(base_link, sec_soup) -> List[str]:
     story_urls = set()
-    sec_content = sec_soup.find(id="content")
-    if sec_content:
-        story_urls = collect_links(sec_content, story_link_filter)
-        story_urls = {base_link + url for url in story_urls}
-    else:
-        logger.error(f"no element with id='content' found")
+    story_urls = collect_links(sec_soup, story_link_filter)
+    story_urls = {base_link + url for url in story_urls}
     return list(story_urls)

@@ -8,7 +8,7 @@ from indexers.indexer import add_values
 from db import mongo_db as db
 
 logger = logging.getLogger(__name__)
-FetcherState = Enum("FetcherState", "uninitialized ready extracting_urls extracting_stories")
+FetcherState = Enum("FetcherState", "uninitialized ready extracting_urls extracting_stories finished")
 
 
 class Fetcher(Thread):
@@ -60,13 +60,15 @@ class Fetcher(Thread):
                         add_values(section, url, story)
                         stories[story["title"]] = story
                         self.fetched += 1
+                    else:
+                        print(f"Failed to index story")
                 else:
                     logger.error(f"could not make soup for story {url}")
                     self.total -= 1
         print(f"Before inserting {len(stories)} stories")
         db.insert_many(self.coll_name, stories.values())
         print(f"After inserting stories")
-        self.state = FetcherState.ready
+        self.state = FetcherState.finished
 
 
 FETCHERS = {}
@@ -82,7 +84,12 @@ def get_fetcher(coll_name):
 
 
 def start_fetch(coll_name):
-    get_fetcher(coll_name).start()
+    f = get_fetcher(coll_name)
+    # Threads are only allowed to run once, create a new one if there is already one there
+    if f.state is FetcherState.finished:
+        f = Fetcher(coll_name, JOURNALS[coll_name])
+    FETCHERS[coll_name] = f
+    f.start()
 
 
 def get_state(coll_name):
