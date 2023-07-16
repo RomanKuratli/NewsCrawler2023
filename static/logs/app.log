@@ -323,3 +323,40 @@ RuntimeError: threads can only be started once
 2023-07-16 15:54:22,066 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:54:22] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
 2023-07-16 15:54:22,114 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:54:22] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
 2023-07-16 15:54:22,114 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:54:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 15:57:37,541 ERROR controller Exception on /show_journal/watson [GET]
+Traceback (most recent call last):
+  File "C:\Users\rkura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rkura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rkura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rkura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\NewsCrawler2023\controller.py", line 99, in show_journal
+    section_chart = chart_data.article_amount_per_section(coll_name)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\NewsCrawler2023\analysis\chart_data.py", line 85, in article_amount_per_section
+    return bar_chart_grouped_by_section(coll_name, count_docs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\NewsCrawler2023\analysis\chart_data.py", line 73, in bar_chart_grouped_by_section
+    for section, docs in db.group_by_section(coll_name).items():
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\NewsCrawler2023\db\mongo_db.py", line 76, in group_by_section
+    for doc in coll.find(sort=("section", 1)):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rkura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\collection.py", line 1661, in find
+    return Cursor(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rkura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\cursor.py", line 264, in __init__
+    self.__ordering = sort and helpers._index_document(sort) or None
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rkura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\helpers.py", line 124, in _index_document
+    key, value = item
+    ^^^^^^^^^^
+TypeError: cannot unpack non-iterable int object
+2023-07-16 15:57:37,573 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:57:37] "[35m[1mGET /show_journal/watson HTTP/1.1[0m" 500 -
