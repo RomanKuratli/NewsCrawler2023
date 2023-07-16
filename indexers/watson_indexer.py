@@ -28,34 +28,26 @@ def index(story_soup, since=None):
     :return: a dict representing a story or None if a required field could not be extracted
     """
     story_div = story_soup.find(find_story_div)
-    if not story_div: 
-        print("No story_div")
+    if not story_div:
         return None
 
     title = story_div.find(find_title)
     if not title: 
-        print("No title")
         return None
     title_txt = title.string
 
     publish_icon = story_div.find(find_publish_date_icon_span)
     if not publish_icon: 
-        print("No publish_div")
         return None
     changed_date = publish_icon.next_sibling.string.strip()
-    print(f"changed_date str = {changed_date}")
     changed_date = datetime.strptime(changed_date, "%d.%m.%Y, %H:%M")
-    print(f"changed_date str = {changed_date}")
     if changed_date < EARLIEST_PUBLISHED: 
-        print("Older than 2015")
         return None  # only fetch stories newer than 2015
     if since and changed_date <= since: 
-        print("Older than 'since'")
         return None
 
     text_tags = story_div.find_all(find_text_tags)
-    if not text_tags: 
-        print("No text")
+    if not text_tags:
         return None
 
     # Treat the first paragraph as lead text
