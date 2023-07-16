@@ -51,7 +51,7 @@
     {
         "coll": "watson",
         "display": "Watson",
-        "baseLink": "http://www.watson.ch",
+        "baseLink": "https://www.watson.ch",
         "crawler": "watson_crawler.crawl",
         "indexer": "watson_indexer.index",
         "sections": [
@@ -65,11 +65,7 @@
             "/Wirtschaft/",
             "/Leben/",
             "/Wissen/",
-            "/gesundheit/",
-            "/news/wirtschaft/",
-            "/news/wirtschaft/page2",
-            "/news/wirtschaft/page3",
-            "/news/wirtschaft/page4"
+            "/gesundheit/"
         ]
     }
 ]

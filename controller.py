@@ -49,6 +49,7 @@ def index():
 
 @app.route("/fetch/<coll_name>")
 def fetch(coll_name):
+    print(f"Journal {coll_name}: {JOURNALS[coll_name]}")
     if coll_name not in JOURNALS \
     or not JOURNALS[coll_name]["crawler"] \
     or not JOURNALS[coll_name]["baseLink"] \

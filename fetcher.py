@@ -52,6 +52,7 @@ class Fetcher(Thread):
         for section, urls in urls_per_section:
             for url in urls:
                 self.recent_action = f"indexing url {url}"
+                print(f"indexing url {url}")
                 story_soup = make_soup(url)
                 if story_soup:
                     story = self.indexer(story_soup)
@@ -62,7 +63,9 @@ class Fetcher(Thread):
                 else:
                     logger.error(f"could not make soup for story {url}")
                     self.total -= 1
+        print(f"Before inserting {len(stories)} stories")
         db.insert_many(self.coll_name, stories.values())
+        print(f"After inserting stories")
         self.state = FetcherState.ready
 
 

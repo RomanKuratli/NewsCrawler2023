@@ -18,7 +18,7 @@ def make_dict(path):
             journal_dict = {}
             
             for k, v in journal.items():
-                if k in ("display", "baseLink", "section"):
+                if k in ("display", "baseLink", "sections"):
                     # Copy these just as they are needed
                     journal_dict[k] = v
                 elif k in ("crawler", "indexer"):

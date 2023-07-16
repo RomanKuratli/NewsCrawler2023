@@ -9,20 +9,15 @@ def find_story_div(tag):
 
 
 def find_title(tag):
-    return tag.name == "h2" and tag.has_attr("class") and tag["class"][0] == "maintitle"
+    return tag.name == "h2" and tag.has_attr("class") and tag["class"][0] == "watson-snippet__title"
 
 
-def find_publish_date_div(tag):
-    return tag.name == "div" and tag.has_attr("class") and "publish_date" in tag["class"]
+def find_publish_date_icon_span(tag):
+    return tag.name == "span" and tag.has_attr("class") and "watson-snippet__shareBubbles__published" in tag["class"]
 
 
-def find_lead_p(tag):
-    return tag.name == "p" and tag.has_attr("class") and "lead" in tag["class"]
-
-
-def find_text_content(tag):
-    return (tag.name == "p" and tag.has_attr("class") and "insert" not in tag["class"] and "insertcaption" not in tag["class"] and "lead" not in tag["class"] and not "author" in tag["class"]) or \
-           (tag.name == "h4" and tag.has_attr("class") and "tweentitle" in tag["class"])
+def find_text_tags(tag):
+    return tag.name == "p" and tag.has_attr("class") and "watson-snippet__text" in tag["class"]
 
 
 def index(story_soup, since=None):
@@ -33,29 +28,43 @@ def index(story_soup, since=None):
     :return: a dict representing a story or None if a required field could not be extracted
     """
     story_div = story_soup.find(find_story_div)
-    if not story_div: return None
+    if not story_div: 
+        print("No story_div")
+        return None
 
     title = story_div.find(find_title)
-    if not title: return None
+    if not title: 
+        print("No title")
+        return None
     title_txt = title.string
 
-    publish_div = story_div.find(find_publish_date_div)
-    if not publish_div: return None
-    changed_date = publish_div.contents[0].strip()
-    changed_date = datetime.strptime(changed_date, "%d.%m.%y, %H:%M")
-    if changed_date < EARLIEST_PUBLISHED: return None  # only fetch stories newer than 2015
-    if since and changed_date <= since: return None
+    publish_icon = story_div.find(find_publish_date_icon_span)
+    if not publish_icon: 
+        print("No publish_div")
+        return None
+    changed_date = publish_icon.next_sibling.string.strip()
+    print(f"changed_date str = {changed_date}")
+    changed_date = datetime.strptime(changed_date, "%d.%m.%Y, %H:%M")
+    print(f"changed_date str = {changed_date}")
+    if changed_date < EARLIEST_PUBLISHED: 
+        print("Older than 2015")
+        return None  # only fetch stories newer than 2015
+    if since and changed_date <= since: 
+        print("Older than 'since'")
+        return None
 
-    lead_p = story_div.find(find_lead_p)
-    if not lead_p or not lead_p.string: return None
-    subtitle = lead_p.string
-    if not subtitle: return None
+    text_tags = story_div.find_all(find_text_tags)
+    if not text_tags: 
+        print("No text")
+        return None
 
+    # Treat the first paragraph as lead text
+    subtitle = text_tags[0].string
     text = ""
-    for text_content in story_div.find_all(find_text_content):
+    for text_content in text_tags[1:]:
         if text_content.string:
             text += text_content.string + "\n"
-    if not text: return None
+    
 
     return {
         "title": title_txt,
@@ -66,7 +75,7 @@ def index(story_soup, since=None):
 
 
 if __name__ == "__main__":
-    from utils import make_soup
-    story_soup = make_soup("https://www.watson.ch/Digital/Wissen/532340777-Roboter-und-virtuelle-Restaurants-%E2%80%93-wie-das-Silicon-Valley-unsere-Esskultur-revolutioniert")
+    from utils.utils import make_soup
+    story_soup = make_soup("https://www.watson.ch/schweiz/bundesrat/457981257-bundesrat-roesti-beantragt-ukw-verlaengerung-bis-ende-2026")
     assert story_soup, "Could not make soup!"
     print(index(story_soup))

@@ -1,8 +1,43 @@
-2023-07-15 12:27:55,041 INFO __main__ Successfully configured logger
-2023-07-15 12:27:55,052 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2023-07-16 12:07:31,223 INFO __main__ Successfully configured logger
+2023-07-16 12:07:31,236 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2023-07-15 12:27:55,052 INFO werkzeug [33mPress CTRL+C to quit[0m
-2023-07-15 12:28:02,098 ERROR controller Exception on / [GET]
+2023-07-16 12:07:31,236 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-07-16 12:07:35,053 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:07:35] "GET / HTTP/1.1" 200 -
+2023-07-16 12:07:35,212 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:07:35] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 12:07:35,287 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:07:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 12:07:35,381 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:07:35] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 12:07:40,194 INFO fetcher Set up fetcher for collection watson
+2023-07-16 12:07:40,194 INFO fetcher fetching stories of journal watson in thread Thread-6
+2023-07-16 12:07:40,197 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:07:40] "GET /fetch/watson HTTP/1.1" 200 -
+2023-07-16 12:07:40,494 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:07:40] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 12:07:40,525 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:07:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 12:07:40,526 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:07:40] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 12:07:41,364 ERROR utils.utils Could not make soup: <urlopen error [Errno 11001] getaddrinfo failed>, (gaierror(11001, 'getaddrinfo failed'),)
+2023-07-16 12:07:41,364 ERROR crawlers.crawler could not make a soup for International/
+2023-07-16 12:07:44,416 INFO fetcher Download a total of 719 stories.
+2023-07-16 12:07:52,428 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:07:52] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:08:06,999 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:08:06] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:22:28,041 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:22:28] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:22:38,133 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:22:38] "GET / HTTP/1.1" 200 -
+2023-07-16 12:22:38,442 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:22:38] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 12:22:38,459 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:22:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 12:22:38,460 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:22:38] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 12:22:43,244 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:22:43] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:41:44,362 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:41:44] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:41:46,003 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:41:46] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:41:51,570 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:41:51] "GET / HTTP/1.1" 200 -
+2023-07-16 12:41:51,588 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:41:51] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 12:41:51,834 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:41:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 12:41:51,897 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:41:51] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 12:45:40,777 INFO __main__ Successfully configured logger
+2023-07-16 12:45:40,799 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-16 12:45:40,799 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-07-16 12:45:59,520 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:45:59] "GET / HTTP/1.1" 200 -
+2023-07-16 12:45:59,532 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:45:59] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 12:45:59,782 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:45:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 12:45:59,845 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:45:59] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 12:46:04,376 ERROR controller Exception on /fetch/watson [GET]
 Traceback (most recent call last):
   File "C:\Users\rkura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 2190, in wsgi_app
     response = self.full_dispatch_request()
@@ -16,46 +51,275 @@ Traceback (most recent call last):
   File "C:\Users\rkura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1469, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\PythonProjects\NewsCrawler\controller.py", line 47, in index
-    return render_start_page()
-           ^^^^^^^^^^^^^^^^^^^
-  File "D:\PythonProjects\NewsCrawler\controller.py", line 86, in render_start_page
-    journals=sorted(JOURNALS.items(), key=sort_journals_by_display_key))
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\PythonProjects\NewsCrawler\controller.py", line 38, in sort_journals_by_display_key
-    return journal[1]["Display"]
-           ~~~~~~~~~~^^^^^^^^^^^
-KeyError: 'Display'
-2023-07-15 12:28:02,099 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 12:28:02] "[35m[1mGET / HTTP/1.1[0m" 500 -
-2023-07-15 12:28:37,875 INFO __main__ Successfully configured logger
-2023-07-15 12:28:37,887 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+  File "D:\PythonProjects\NewsCrawler2023\controller.py", line 61, in fetch
+    fetcher.start_fetch(coll_name)
+  File "D:\PythonProjects\NewsCrawler2023\fetcher.py", line 82, in start_fetch
+    get_fetcher(coll_name).start()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 952, in start
+    raise RuntimeError("threads can only be started once")
+RuntimeError: threads can only be started once
+2023-07-16 12:46:04,379 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:46:04] "[35m[1mGET /fetch/watson HTTP/1.1[0m" 500 -
+2023-07-16 12:51:00,240 INFO __main__ Successfully configured logger
+2023-07-16 12:51:00,249 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2023-07-15 12:28:37,887 INFO werkzeug [33mPress CTRL+C to quit[0m
-2023-07-15 12:28:43,178 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 12:28:43] "GET / HTTP/1.1" 200 -
-2023-07-15 12:28:43,345 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 12:28:43] "GET /static/w3.css HTTP/1.1" 200 -
-2023-07-15 12:28:43,400 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 12:28:43] "GET /static/style.css HTTP/1.1" 200 -
-2023-07-15 12:28:43,561 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 12:28:43] "GET /static/jquery.js HTTP/1.1" 200 -
-2023-07-15 13:38:55,794 INFO __main__ Successfully configured logger
-2023-07-15 13:38:55,805 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2023-07-16 12:51:00,250 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-07-16 12:51:10,414 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:51:10] "GET / HTTP/1.1" 200 -
+2023-07-16 12:51:10,435 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:51:10] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 12:51:10,666 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:51:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 12:51:10,741 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:51:10] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 12:51:14,478 ERROR controller Exception on /fetch/watson [GET]
+Traceback (most recent call last):
+  File "C:\Users\rkura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rkura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rkura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rkura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\NewsCrawler2023\controller.py", line 61, in fetch
+    fetcher.start_fetch(coll_name)
+  File "D:\PythonProjects\NewsCrawler2023\fetcher.py", line 82, in start_fetch
+    get_fetcher(coll_name).start()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 952, in start
+    raise RuntimeError("threads can only be started once")
+RuntimeError: threads can only be started once
+2023-07-16 12:51:14,479 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:51:14] "[35m[1mGET /fetch/watson HTTP/1.1[0m" 500 -
+2023-07-16 12:51:58,865 INFO __main__ Successfully configured logger
+2023-07-16 12:51:58,876 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2023-07-15 13:38:55,805 INFO werkzeug [33mPress CTRL+C to quit[0m
-2023-07-15 13:39:08,797 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 13:39:08] "GET /static/w3.css HTTP/1.1" 200 -
-2023-07-15 13:39:08,831 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 13:39:08] "GET /static/style.css HTTP/1.1" 200 -
-2023-07-15 13:39:08,918 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 13:39:08] "GET /static/jquery.js HTTP/1.1" 200 -
-2023-07-15 13:39:08,979 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 13:39:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2023-07-15 13:39:13,260 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 13:39:13] "GET / HTTP/1.1" 200 -
-2023-07-15 13:39:13,272 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 13:39:13] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
-2023-07-15 13:39:13,495 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 13:39:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-2023-07-15 13:39:13,588 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 13:39:13] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
-2023-07-15 14:13:53,432 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 14:13:53] "GET / HTTP/1.1" 200 -
-2023-07-15 14:13:53,446 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 14:13:53] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
-2023-07-15 14:13:53,693 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 14:13:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-2023-07-15 14:13:53,756 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 14:13:53] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
-2023-07-15 14:16:18,262 INFO __main__ Successfully configured logger
-2023-07-15 14:16:18,273 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2023-07-16 12:51:58,876 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-07-16 12:52:07,323 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:07] "GET / HTTP/1.1" 200 -
+2023-07-16 12:52:07,631 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:07] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 12:52:07,647 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 12:52:07,647 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:07] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 12:52:15,672 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:15] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:20,440 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:20] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:21,150 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:21] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:21,811 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:21] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:22,075 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:22] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:22,122 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:22] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:22,387 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:22] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:22,524 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:22] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:23,072 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:23] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:23,320 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:23] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:23,383 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:23] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:23,631 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:23] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:23,773 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:23] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:24,008 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:24] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:24,256 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:24] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:24,489 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:24] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:24,739 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:24] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:24,973 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:24] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:25,224 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:25] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:25,457 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:25] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:25,719 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:25] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:25,971 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:25] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:26,206 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:26] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:26,590 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:26] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:27,123 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:27] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:27,388 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:27] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:27,430 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:27] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:27,699 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:27] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:27,794 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:27] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:28,013 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:28] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:28,378 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:28] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:28,933 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:28] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:29,196 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:29] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:29,243 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:29] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:29,508 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:29] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:29,662 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:29] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:29,879 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:29] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:30,066 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:30] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:30,313 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:30] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:30,844 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:30] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:31,109 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:31] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:31,156 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:31] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:31,421 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:31] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:31,547 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:31] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:31,768 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:31] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:32,020 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:32] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:32,705 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:32] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:40,038 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:40] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:40,859 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:40] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 12:52:43,821 ERROR controller Exception on /fetch/watson [GET]
+Traceback (most recent call last):
+  File "C:\Users\rkura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rkura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rkura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rkura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\NewsCrawler2023\controller.py", line 61, in fetch
+    fetcher.start_fetch(coll_name)
+  File "D:\PythonProjects\NewsCrawler2023\fetcher.py", line 82, in start_fetch
+    get_fetcher(coll_name).start()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 952, in start
+    raise RuntimeError("threads can only be started once")
+RuntimeError: threads can only be started once
+2023-07-16 12:52:43,822 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 12:52:43] "[35m[1mGET /fetch/watson HTTP/1.1[0m" 500 -
+2023-07-16 13:13:24,971 INFO __main__ Successfully configured logger
+2023-07-16 13:13:24,999 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2023-07-15 14:16:18,273 INFO werkzeug [33mPress CTRL+C to quit[0m
-2023-07-15 14:16:22,079 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 14:16:22] "GET / HTTP/1.1" 200 -
-2023-07-15 14:16:22,238 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 14:16:22] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
-2023-07-15 14:16:22,331 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 14:16:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-2023-07-15 14:16:22,409 INFO werkzeug 127.0.0.1 - - [15/Jul/2023 14:16:22] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 13:13:24,999 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-07-16 13:13:27,671 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:13:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-07-16 13:13:39,027 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:13:39] "GET / HTTP/1.1" 200 -
+2023-07-16 13:13:39,284 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:13:39] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 13:13:39,350 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:13:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 13:13:39,350 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:13:39] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 13:13:45,754 INFO fetcher Set up fetcher for collection watson
+2023-07-16 13:13:45,755 INFO fetcher fetching stories of journal watson in thread Thread-9
+2023-07-16 13:13:45,759 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:13:45] "GET /fetch/watson HTTP/1.1" 200 -
+2023-07-16 13:13:46,055 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:13:46] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 13:13:46,087 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:13:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 13:13:46,087 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:13:46] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 13:13:46,612 ERROR utils.utils Could not make soup: <urlopen error [Errno 11001] getaddrinfo failed>, (gaierror(11001, 'getaddrinfo failed'),)
+2023-07-16 13:13:46,614 ERROR crawlers.crawler could not make a soup for International/
+2023-07-16 13:13:49,658 INFO fetcher Download a total of 719 stories.
+2023-07-16 13:16:03,571 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:16:03] "GET /fetch/watson HTTP/1.1" 200 -
+2023-07-16 13:16:03,585 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:16:03] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 13:16:03,818 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:16:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 13:16:03,897 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:16:03] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 13:16:09,601 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:16:09] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 13:19:03,360 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:19:03] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 13:19:38,199 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:19:38] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 13:26:05,276 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:26:05] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 13:26:19,288 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:26:19] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 13:36:37,798 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:36:37] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 13:39:40,088 INFO __main__ Successfully configured logger
+2023-07-16 13:39:40,099 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-16 13:39:40,099 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-07-16 13:39:57,217 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:39:57] "GET / HTTP/1.1" 200 -
+2023-07-16 13:39:57,558 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:39:57] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 13:39:57,694 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:39:57] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 13:39:57,769 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:39:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 13:40:05,169 INFO fetcher Set up fetcher for collection watson
+2023-07-16 13:40:05,169 INFO fetcher fetching stories of journal watson in thread Thread-6
+2023-07-16 13:40:05,172 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:40:05] "GET /fetch/watson HTTP/1.1" 200 -
+2023-07-16 13:40:05,472 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:40:05] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 13:40:05,505 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:40:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 13:40:05,505 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:40:05] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 13:40:06,119 ERROR utils.utils Could not make soup: <urlopen error [Errno 11001] getaddrinfo failed>, (gaierror(11001, 'getaddrinfo failed'),)
+2023-07-16 13:40:06,120 ERROR crawlers.crawler could not make a soup for International/
+2023-07-16 13:40:09,513 INFO fetcher Download a total of 719 stories.
+2023-07-16 13:43:06,752 INFO __main__ Successfully configured logger
+2023-07-16 13:43:06,762 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-16 13:43:06,762 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-07-16 13:43:12,162 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:43:12] "GET / HTTP/1.1" 200 -
+2023-07-16 13:43:12,523 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:43:12] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 13:43:12,711 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:43:12] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 13:43:12,731 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:43:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 13:43:28,852 INFO fetcher Set up fetcher for collection watson
+2023-07-16 13:43:28,853 INFO fetcher fetching stories of journal watson in thread Thread-6
+2023-07-16 13:43:28,856 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:43:28] "GET /fetch/watson HTTP/1.1" 200 -
+2023-07-16 13:43:29,159 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:43:29] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 13:43:29,191 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:43:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 13:43:29,192 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 13:43:29] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 13:43:29,719 ERROR utils.utils Could not make soup: <urlopen error [Errno 11001] getaddrinfo failed>, (gaierror(11001, 'getaddrinfo failed'),)
+2023-07-16 13:43:29,810 ERROR crawlers.crawler could not make a soup for International/
+2023-07-16 13:43:32,825 INFO fetcher Download a total of 719 stories.
+2023-07-16 14:59:48,142 INFO __main__ Successfully configured logger
+2023-07-16 14:59:48,155 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-16 14:59:48,155 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-07-16 14:59:57,485 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 14:59:57] "GET / HTTP/1.1" 200 -
+2023-07-16 14:59:57,633 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 14:59:57] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 14:59:57,730 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 14:59:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 14:59:57,808 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 14:59:57] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 15:00:00,957 INFO fetcher Set up fetcher for collection watson
+2023-07-16 15:00:00,958 INFO fetcher fetching stories of journal watson in thread Thread-6
+2023-07-16 15:00:00,961 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:00:00] "GET /fetch/watson HTTP/1.1" 200 -
+2023-07-16 15:00:01,268 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:00:01] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 15:00:01,301 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:00:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 15:00:01,301 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:00:01] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 15:00:01,811 ERROR utils.utils Could not make soup: <urlopen error [Errno 11001] getaddrinfo failed>, (gaierror(11001, 'getaddrinfo failed'),)
+2023-07-16 15:00:01,812 ERROR crawlers.crawler could not make a soup for International/
+2023-07-16 15:00:05,083 INFO fetcher Download a total of 719 stories.
+2023-07-16 15:02:37,276 INFO __main__ Successfully configured logger
+2023-07-16 15:02:37,287 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-16 15:02:37,287 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-07-16 15:02:44,637 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:02:44] "GET / HTTP/1.1" 200 -
+2023-07-16 15:02:45,012 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:02:45] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 15:02:45,144 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:02:45] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 15:02:45,213 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:02:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 15:02:49,545 INFO fetcher Set up fetcher for collection watson
+2023-07-16 15:02:49,545 INFO fetcher fetching stories of journal watson in thread Thread-6
+2023-07-16 15:02:49,548 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:02:49] "GET /fetch/watson HTTP/1.1" 200 -
+2023-07-16 15:02:49,844 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:02:49] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 15:02:49,891 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:02:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 15:02:49,891 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:02:49] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 15:02:50,391 ERROR utils.utils Could not make soup: <urlopen error [Errno 11001] getaddrinfo failed>, (gaierror(11001, 'getaddrinfo failed'),)
+2023-07-16 15:02:50,391 ERROR crawlers.crawler could not make a soup for International/
+2023-07-16 15:02:53,464 INFO fetcher Download a total of 719 stories.
+2023-07-16 15:44:09,166 INFO __main__ Successfully configured logger
+2023-07-16 15:44:09,178 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-16 15:44:09,179 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-07-16 15:44:23,404 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:44:23] "GET / HTTP/1.1" 200 -
+2023-07-16 15:44:23,771 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:44:23] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 15:44:23,901 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:44:23] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 15:44:23,969 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:44:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 15:44:36,573 INFO fetcher Set up fetcher for collection watson
+2023-07-16 15:44:36,574 INFO fetcher fetching stories of journal watson in thread Thread-6
+2023-07-16 15:44:36,576 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:44:36] "GET /fetch/watson HTTP/1.1" 200 -
+2023-07-16 15:44:36,876 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:44:36] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 15:44:36,994 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:44:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 15:44:36,995 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:44:36] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 15:44:37,358 ERROR utils.utils Could not make soup: <urlopen error [Errno 11001] getaddrinfo failed>, (gaierror(11001, 'getaddrinfo failed'),)
+2023-07-16 15:44:37,359 ERROR crawlers.crawler could not make a soup for International/
+2023-07-16 15:44:40,650 INFO fetcher Download a total of 719 stories.
+2023-07-16 15:45:43,951 INFO __main__ Successfully configured logger
+2023-07-16 15:45:43,964 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-16 15:45:43,964 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-07-16 15:45:48,317 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:45:48] "GET / HTTP/1.1" 200 -
+2023-07-16 15:45:48,698 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:45:48] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 15:45:48,878 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:45:48] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 15:45:48,901 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:45:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 15:45:54,725 INFO fetcher Set up fetcher for collection watson
+2023-07-16 15:45:54,725 INFO fetcher fetching stories of journal watson in thread Thread-6
+2023-07-16 15:45:54,728 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:45:54] "GET /fetch/watson HTTP/1.1" 200 -
+2023-07-16 15:45:55,026 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:45:55] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 15:45:55,073 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:45:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 15:45:55,074 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:45:55] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 15:45:55,576 ERROR utils.utils Could not make soup: <urlopen error [Errno 11001] getaddrinfo failed>, (gaierror(11001, 'getaddrinfo failed'),)
+2023-07-16 15:45:55,577 ERROR crawlers.crawler could not make a soup for International/
+2023-07-16 15:45:58,882 INFO fetcher Download a total of 719 stories.
+2023-07-16 15:47:09,494 INFO __main__ Successfully configured logger
+2023-07-16 15:47:09,505 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-16 15:47:09,505 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-07-16 15:47:17,764 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:47:17] "GET / HTTP/1.1" 200 -
+2023-07-16 15:47:18,143 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:47:18] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 15:47:18,280 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:47:18] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 15:47:18,349 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:47:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 15:47:28,405 INFO fetcher Set up fetcher for collection watson
+2023-07-16 15:47:28,405 INFO fetcher fetching stories of journal watson in thread Thread-6
+2023-07-16 15:47:28,409 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:47:28] "GET /fetch/watson HTTP/1.1" 200 -
+2023-07-16 15:47:28,711 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:47:28] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 15:47:28,835 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:47:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-07-16 15:47:28,838 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:47:28] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 15:47:29,230 ERROR utils.utils Could not make soup: <urlopen error [Errno 11001] getaddrinfo failed>, (gaierror(11001, 'getaddrinfo failed'),)
+2023-07-16 15:47:29,230 ERROR crawlers.crawler could not make a soup for International/
+2023-07-16 15:47:32,454 INFO fetcher Download a total of 719 stories.
+2023-07-16 15:50:22,674 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:50:22] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 15:51:59,146 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:51:59] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 15:53:43,026 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:53:43] "GET /task_info/watson HTTP/1.1" 200 -
+2023-07-16 15:54:06,321 INFO db.mongo_db Bulk operation success: <pymongo.results.InsertManyResult object at 0x0000016344E1C400>
+2023-07-16 15:54:21,784 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:54:21] "GET / HTTP/1.1" 200 -
+2023-07-16 15:54:22,066 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:54:22] "[36mGET /static/w3.css HTTP/1.1[0m" 304 -
+2023-07-16 15:54:22,114 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:54:22] "[36mGET /static/jquery.js HTTP/1.1[0m" 304 -
+2023-07-16 15:54:22,114 INFO werkzeug 127.0.0.1 - - [16/Jul/2023 15:54:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
