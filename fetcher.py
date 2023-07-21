@@ -5,7 +5,7 @@ from enum import Enum
 from threading import Thread
 from crawlers import crawler
 from indexers.indexer import add_values
-from db import mongo_db as db
+import mongo_db as db
 
 logger = logging.getLogger(__name__)
 FetcherState = Enum("FetcherState", "uninitialized ready extracting_urls extracting_stories finished")

@@ -6,7 +6,7 @@ from bokeh.embed import components
 from flask import Markup
 
 from analysis import statistics as stat
-from db import mongo_db as db
+import mongo_db as db
 
 
 def get_tags_in_body(soup):

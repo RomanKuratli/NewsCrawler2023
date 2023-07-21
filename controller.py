@@ -10,7 +10,7 @@ from flask.json import dumps, loads
 import analysis.sentiment_analysis as sent
 from analysis import chart_data
 from analysis.statistics import SimpleWordStatistics
-from db import mongo_db as db
+import mongo_db as db
 from utils.settings import APP_BACKUPS, APP_LOGS
 from utils.journals import JOURNALS
 import fetcher
@@ -143,7 +143,7 @@ def term_analysis():
             idf_section_chart = chart_data.idf_per_section(term, coll_name)
             sent_chart = chart_data.avg_sent_per_month(coll_name, term)
             charts.append({
-                "journal_name": journal["Display"],
+                "journal_name": journal["display"],
                 "idf_month_chart": idf_month_chart,
                 "idf_section_chart": idf_section_chart,
                 "sent_chart": sent_chart
