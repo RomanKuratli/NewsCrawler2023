@@ -1,8 +1,9 @@
+import math
 from calendar import month_name
 
-#from bokeh.plotting import Bar, Line
-#from bokeh.plotting import CatAttr
-from bokeh.embed import components
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_svg import FigureCanvasSVG as FigureCanvas
+from io import BytesIO
 from flask import Markup
 
 from analysis import statistics as stat
@@ -16,31 +17,27 @@ def get_tags_in_body(soup):
     return body_html
 
 
-def get_chart_markup(chart):
-    return Markup("\n".join([tag for tag in components(chart)]))
-
-
 def get_bar_chart_markup(labels, values, chart_range=None):
-    data = {"labels": labels, "values": values}
-    #bar = Bar(data,
-    #          values="values",
-    #          label=CatAttr(columns=["labels"], sort=False),
-    #          legend=False,
-    #          responsive=True)
-    #if chart_range:
-    #    start, end = chart_range
-    #    bar.y_range.start = start
-    #    bar.y_range.end = end
-    #return get_chart_markup(bar)
-    return Markup("TODO: Bar chart")
+    # With a bit of friendly help by ChatGPT
+    values = [0 if math.isnan(x) else x for x in values]
+    
+    plt.bar(labels, values, color="blue")
+    # Rotate labels by 90 degrees so that they don't overlap
+    plt.xticks(rotation=90)
+    # Adjust the bottom margin to make space for longer labels
+    plt.subplots_adjust(bottom=0.3)
 
+    canvas = FigureCanvas(plt.gcf())
+    buf = BytesIO()
+    canvas.print_svg(buf)
+    buf.seek(0)
+    svg_string = buf.read().decode()
+    buf.close()
 
-# TODO fix
-def get_line_chart_markup(labels, values) -> Markup:
-    #data = {"labels": labels, "values": values}
-    #line = Line(data, values="values", label=CatAttr(columns=["labels"], sort=False))
-    #return get_chart_markup(line)
-    return Markup("TODO: Line chart")
+    # Clear the figure to reset the state for the next plot
+    plt.clf()
+
+    return Markup(svg_string)
 
 
 # ============= aggregators ======================
